@@ -1,4 +1,5 @@
 # Call the network module
+# Example: consume outputs from the network module
 module "network" {
   source          = "../../modules/network"
   vnet_name       = "dev-vnet"
@@ -11,8 +12,8 @@ module "network" {
   subnet_prefixes = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 }
 
-# Example: consume outputs from the network module
 
+# this is the windows vm module
 
 module "windows_vm" {
   source          = "../../modules/windows-vm"
